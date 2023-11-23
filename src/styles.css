@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-800;
+}
+
+
+.activebutton {
+  @apply outline outline-offset-2 outline-sky-500 text-yellow-200 underline underline-offset-1;
+}

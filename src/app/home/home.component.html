@@ -1,0 +1,9 @@
+<div class="game-board w-96 h-96 bg-gray-800 mx-auto my-8 bg-slate-300 relative">
+  <div *ngFor="let part of snake" [ngStyle]="{'left.px': part.x, 'top.px': part.y}"
+    class="snake-part bg-green-600 outline-dotted outline-2 outline-offset-2">
+  </div>
+  <div *ngIf="food" [ngStyle]="{'left.px': food.x, 'top.px': food.y}" class="food bg-red-600 rounded-full"></div>
+</div>
+<div class="score w-96 mx-auto my-4">
+  <h2 class="text-center text-white">Score: {{ score }}</h2>
+</div>
